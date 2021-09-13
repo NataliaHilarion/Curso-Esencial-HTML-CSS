@@ -59,7 +59,7 @@ pre{
 }
 
 .hero{
-  background-image:  linear-gradient( to top, rgba(255,255,255, .3), transparent), url(../images/pattern.png);
+  background-image:  linear-gradient( to top, rgba(255,255,255, .3), transparent), url(.././images/pattern.png);
   height: 350px
   /* background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black); */
   /* background-size: cover; */
