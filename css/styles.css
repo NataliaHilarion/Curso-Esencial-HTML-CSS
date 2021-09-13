@@ -3,28 +3,7 @@
   src: url("../fonts/charter-regular.otf");
   font-style: normal;
   font-weight: normal; /* peso normal es 400
-}
-
-/* @font-face{
-  font-family: charter;
-  src: url("../fonts/charter-italic.otf") ;
-  font-style: italic;
-  font-weight: normal;
-} */
-
-/* @font-face{
-  font-family: charter;
-  src: url("../fonts/charter-bold.otf");
-  font-style: normal;
-  font-weight: bold;
-} */
-
-/* @font-face{
-  font-family: charter ;
-  src: url("../fonts/charter-bold-italic.otf") ;
-  font-style: italic;
-  font-weight: bold;
-} */
+}*/
 
 :root{
   font-size: 18px;
