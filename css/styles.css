@@ -10,11 +10,17 @@
   --gray30: #212121;  /*del body en general*/
   --gray20: #212429; /*del footer*/
   --gray10: #616161; /*de las anclas*/
+  --gray15: #424242; /*quote*/
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   color: var(--gray30);
   font-family: 'Roboto', sans-serif; /* fuente tomada de google fonts con opcion link y pegada en HTML  */
+  margin: 0;
 }
 
 a {
@@ -24,7 +30,34 @@ a {
 header {
   font-size: 14px;
   color: var(--gray10);
+  width: 188px;
+  position: absolute;
+  left: -232px;
+  top: 64px;
+  /* border: 1px solid blue; */
+
+  /* position: static; */
+   /* position: relative; */
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 50px; */
+   /* background: blue; */
+   /* las propiedades que se activan con la position relative: top left bottom right z-index */
+  /* position: fixed; */
+  /* position: sticky;  */
 }
+
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
 
 header a {
   color: var(--gray10);
@@ -33,29 +66,87 @@ header a {
 
 header a:hover {
   color: var(--gray30);
+  text-decoration: underline;
 }
 
-header details summary {
+nav details summary {
   font-weight: bold;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+header li {
+  margin-bottom: 16px;
 }
 
 h1 {
   font-size: 60px;
   /* font-size: 3,75em; porque divide 60 entre 16 pixels que por defecto tiene el navegador */
+  margin-top: 64px;
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+hr{
+  margin: 64px 0;
 }
 
 h2 {
   /* font-size: 32px; */
   font-size: 2em;
+  margin: 64px 0 40px;
+  font-weight: normal;
 }
 
 h3 {
   /* font-size: 24px; o dividimos 24 entre 16 y da 1.5em  con punto no coma*/
   font-size: 1.5em;
+  margin-top: 16px;
+  margin-bottom: 24px ;
+  font-weight: normal;
+  position: relative;
+  top: 0;
+  background: white;
+}
+
+.section-content h3::after{
+  content: ' ';
+  height: 4px;
+  width: 192px;
+  background: var(--gray30);
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 pre{
   background: #FEC62E;
+  padding: 40px;
+  font-family: 'Roboto';
+  line-height: 24px;
+}
+
+blockquote{
+  color: var(--gray15);
+  font-size: 24px;;
+  margin: 32px 0;
+  padding-left: 16px;
+  line-height: 24px;
+  border-left: 4px solid var(--gray30);
+}
+
+blockquote span{
+  color: var(--gray10);
+}
+
+blockquote span::before{
+  content: '-';
+}
+
+::selection{
+  background: gray;
+  /* color al seleccionar los elementos */
 }
 
 .hero{
@@ -67,14 +158,63 @@ pre{
   /* background-position: left 20px bottom 200px; */
 }
 
-::selection{
-  background: gray;
+.section-content{
+  margin-top: 164px;
 }
 
-h3::after{
-  content: ' ';
-  height: 4px;
-  width: 192px;
-  background: var(--gray30);
-  display: inline-block;
+.section-content:first-of-type {
+  margin: 0;
+}
+
+.section-content:nth-of-type(2) h3 {
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+.section-content:nth-of-type(3) h3 {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.section-content ol li {
+  line-height: 24px;
+}
+
+.section-content ul li {
+  margin-bottom: 16px;
+}
+
+.section-content + hr {
+  display: none; /*se oculta el elemento, pero cuando la pag lea html leera el espacio*/
+}
+
+.section-content img{
+  margin-top: 40px;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+  padding-bottom: 8px;
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal) '. '; /*counter es una funcion de css que recibe el nombre del contador*/
+}
+
+.section-content:nth-of-type(3) h3::before {
+  content: ''; /*la tercera section content queda sin numeracion */
+}
+
+.main {
+  color: #424242;
+}
+
+.wrapper {
+  width: 902px;
+  margin: auto;
+}
+
+.main-content {
+  /* padding: 20px; */
+  background: white;
 }
