@@ -5,12 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles-logical.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
-  <title>Blog de Nata</title>
+  <title>Blog de Nata Logical</title>
 </head>
 
 <body>
@@ -44,6 +44,22 @@
                 <li><a href="#que-es-css">Qué es CSS</a> </li>
               </ol>
             </details>
+            <details>
+              <summary>
+                Modelo de caja
+              </summary>
+              <ol>
+                <li><a href="#modelo">Modelo de caja</a> </li>
+                <li><a href="#propiedades-fisicas">Propiedades Fisicas</a> </li>
+                <li><a href="#propiedades-logicas">Propiedades Logicas</a> </li>
+              </ol>
+            </details>
+            <details>
+              <summary>No te rindas</summary>
+              <ul>
+                <li> <a href="#video-ntr">Video no te rindas</a></li>
+              </ul>
+            </details>
           </nav>
         </header>
       </div>
@@ -59,20 +75,16 @@
             de
             contenidos,
             en el nivel 2 aprenderás de componentes y en 3 sobre layouts.</p>
-          <hr>
-
           <section class="section-content">
             <h2>Setup</h2>
-
-            <img src="./images/google-chrome.png" alt="Logo Google Chrome" title="Logo Google Chrome">
-            <h3 id="google-chrome">Google Chrome</h3>
+            <img id="google-chrome" src="./images/google-logical.png" alt="Logo Google Chrome" title="Logo Google Chrome">
+            <h3 >Google Chrome</h3>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
               herramientas de
               desarrollo avanzadas y de amigable uso.</p>
 
-            <img src="./images/logo-visual-studio-code.png" alt="Logo Visual Studio Code"
-              title="Logo Visual Studio Code">
-            <h3 id="vsc"> Visual Studio Code</h3>
+            <img id="vsc" src="./images/visualStudio-logical.png" alt="Logo Visual Studio Code" title="Logo Visual Studio Code">
+            <h3 > Visual Studio Code</h3>
             <p>Visual Studio Code es el editor de texto más popular y potente del mercado actualmente, su fácil uso y la
               capacidad
               de
@@ -81,25 +93,24 @@
               en
               el que se desemvuelva.</p>
 
-            <img src="./images/logo-figma.png" alt="Logo de Figma" title="Logo de Figma">
-            <h3 id="figma">Figma</h3>
+            <img id="figma" src="./images/figma-logical.png" alt="Logo de Figma" title="Logo de Figma">
+            <h3 >Figma</h3>
             <p>Figma es una la herramienta más popular en la actualidad para entregar diseños a los desarrolladores para
               su
               implementación por su fácil uso porque puede ser usado directamente desde el navegador.</p>
 
-            <img src="./images/logo-github.png" alt="Logo Github" title="Logo Github">
-            <h3 id="github">GitHub</h3>
+            <img id="github" src="./images/gitHub-logical.png" alt="Logo Github" title="Logo Github">
+            <h3 >GitHub</h3>
             <p>Así como en Facebook te encuentran tus amigos, en Github te encuentran otras programadoras y
               programadores de
               todo
-              el
-              mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o
+              el mundo, en vez de subir fotos de tus viajes aquí subes tu código y puedes elegir hacerlo “open source” o
               guardarlo de
               manera privada, Github será esencial para almacenar tu futuro portafolio.</p>
 
             <blockquote>
               <p>“Este es el inicio de tu carrera como Desarrollador Web” </p>
-              <p> <span> Leonidas Esteban</span> </p>
+              <p> Leonidas Esteban </p>
             </blockquote>
 
           </section>
@@ -114,20 +125,20 @@
               significado
               y la estructura del contenido.</p>
             <pre>
-      &lt;!DOCTYPE html&gt;
-      &lt;html lang=&quot;en&quot;&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
 
-      &lt;head&gt;
-      &lt;meta charset=&quot;UTF-8&quot;&gt;
-      &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-      &lt;title&gt;Document&lt;/title&gt;
-      &lt;/head&gt;
-      &lt;body&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot;content=&quot;IE=edge&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
 
-      &lt;/body&gt;
-      &lt;/html&gt;
-          </pre>
+&lt;/body&gt;
+&lt;/html&gt;
+              </pre>
 
             <h3 id="etiquetas">Etiquetas</h3>
             <p>Las etiquetas HTML van a ayudarnos a brindar una estructura y semántica al contenido de nuestro website y
@@ -154,8 +165,7 @@
               genealógico fuera: padres, hijos, hermanos con niveles infinitos. cuando entendemos esta anidación podemos
               identificar
               dependencias, herencias en css y que tan complejo es nuestro proyecto.</p>
-            <img width="800px" src="./images/dom.png"
-              alt="Estructura de árbol que representa al Document Object Model - DOM"
+            <img src="./images/dom.png" alt="Estructura de árbol que representa al Document Object Model - DOM"
               title="Estructura de árbol que representa al Document Object Model - DOM">
 
             <h3 id="semantica">Semántica</h3>
@@ -194,7 +204,7 @@
           <hr>
 
           <section class="section-content">
-            <h2>Modelo de caja</h2>
+            <h2 id="modelo">Modelo de caja</h2>
             <h3>El modelo de caja está compuesto por:</h3>
             <p>Chrome va a ser el navegador que utilizaremos en el curso por su extenso soporte de nuevos estándares y
               herramientas de
@@ -206,7 +216,7 @@
               <li>Margin / Márgenes</li>
             </ol>
 
-            <h3>Propiedades físicas para el modelo de caja:</h3>
+            <h3 id="propiedades-fisicas">Propiedades físicas para el modelo de caja:</h3>
             <ul>
               <li>width / height</li>
               <li>margin / margin-top | margin-right | margin-bottom | margin-left</li>
@@ -214,7 +224,7 @@
               <li>padding / padding-top | padding-right | padding-bottom | padding-left</li>
             </ul>
 
-            <h3>Propiedades lógicas para el modelo de caja:</h3>
+            <h3 id="propiedades-logicas">Propiedades lógicas para el modelo de caja:</h3>
             <ul>
               <li>inline-size / block-size</li>
               <li>margin-block | margin-inline | margin-block-start | margin-block-end | margin-inline-start |
@@ -226,35 +236,65 @@
               <li>padding-block | padding-inline | padding-block-start | padding-block-end | padding-inline-start |
                 padding-inline-end</li>
             </ul>
-
-            <h3>Modelo de caja</h3>
-            <img src="./images/imagen-no-te-rindas.png" alt="Imagen con mensaje de: No te Rindas"
-              title="Imagen con mensaje de: No te Rindas">
           </section>
-        </div>
-      </div>
-    </div>
+          <div class="section-content">
+            <h2 id="video-ntr">Videos: No Te Rindas</h2>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video-1">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/eZGvSUNOlzo" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-2">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/5f5Ig_U2Bpk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video-3">
+                  <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/eZGvSUNOlzo"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video-1"></a>
+                <a href="#video-2"></a>
+                <a href="#video-3"></a>
+              </div>
+            </div>
 
-    <p>Si tienes alguna pregunta escríbeme a:
-      <a href="mailto:natalia.hilarion@outlook.com" target="_blank">natalia.hilarion@outlook.com </a>
-    </p>
-    <h2>Suscríbete a nuestro newsletter</h2>
-    <input type="text" name="nombre" placeholder="Nombre">
-    <input type="text" name="correo electronico" placeholder="Correo electrónico">
+          </div>
 
-    <script>
-      const $detailsList = document.querySelectorAll('details')
-      $detailsList.forEach(($details) => {
-        $details.querySelector('summary').addEventListener('click', expand)
-      })
-      function expand() {
-        $detailsList.forEach(($details) => {
-          $details.removeAttribute('open')
-        })
-      }
-    </script>
+          <p>Si tienes alguna pregunta escríbeme a:
+            <a href="mailto:natalia.hilarion@outlook.com" target="_blank">natalia.hilarion@outlook.com </a>
+          </p>
+          <div class="section-conten">
+            <h2>Suscribete a nuestro newsletter</h2>
+            <form action="#" class="form">
+              <input type="text" required placeholder="Nombre" >
+              <input type="email" required placeholder="Correo Electronico">
+              <input type="submit" value="Suscribete">
+            </form>
+          </div>
+
+
+
+          <script>
+            const $detailsList = document.querySelectorAll('details')
+            $detailsList.forEach(($details) => {
+              $details.querySelector('summary').addEventListener('click', expand)
+            })
+            function expand() {
+              $detailsList.forEach(($details) => {
+                $details.removeAttribute('open')
+              })
+            }
+          </script>
   </main>
 
-</body>./
+</body>
 
 </html>
